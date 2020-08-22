@@ -12,7 +12,7 @@ cat << EOF
 --------------------------------
 Easy Programming Fonts Installer
 --------------------------------
-- Maintained by Dat Tran
+- Maintained by Dat Tran (github.com/trdat)
 
 EOF
 
@@ -21,12 +21,12 @@ if [[ ! -e $FONTS_DIR ]]; then
 	mkdir $FONTS_DIR || die "Could not make $FONTS_DIR"
 fi
 
-for FONT in ${FONTS[*]}; do
-	echo "Downloading $FONT"; echo
-	wget -c https://github.com/trdat/easy-programming-fonts-installer/raw/master/$FONT \
-	|| die "Failed to download ${FONT}"
-	mv $FONT $FONTS_DIR || die "Could not install $FONT"
-	echo "Installed $FONT successfully"; echo
+for FONT in ${LIST_FONTS[*]}; do
+    echo "Downloading $FONT"; echo
+    wget -c https://github.com/trdat/easy-programming-fonts-installer/blob/master/local/$FONT \
+      || die "Fail to download ${FONT}"
+    mv $FONT $FONTS_DIR || die "Could not install $FONT"
+    echo "Installed $FONT successfully"; echo
 done
 
 cat << EOF
