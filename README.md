@@ -8,13 +8,16 @@ bash ./install.sh
 
 ## List fonts
 
- 1. Menlo
- 2. Monaco
- 3. Cascadia Code
- 4. Source Code Pro
- 5. InputMono
- 6. Hack
- 7. Hasklig
- 8. Fira Code
+1. Menlo
+2. Cascadia Code
+3. Source Code Pro
+4. InputMono
+5. Hack
+6. Hasklig
+7. Fira Code
+8. Fantasque Sans Mono
+9. JetBrains Mono
+10. Ubuntu Mono
+
 
 Hope you enjoy it!
